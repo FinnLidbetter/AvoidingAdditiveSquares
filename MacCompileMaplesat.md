@@ -1,4 +1,4 @@
-#Compiling maplesat on MacOS
+# Compiling maplesat on MacOS
 
 The changes to fix issues with minisat are given in the following 3 git commit records. Each gives a few lines that need to be changed to allow compilation on Mac:
 
