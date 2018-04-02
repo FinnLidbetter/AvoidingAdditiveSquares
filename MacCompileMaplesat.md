@@ -10,7 +10,7 @@ The modified System.cc file is included in this repositoty (changes correspondin
 I also had to make the following change to the core/Solver.h file for MapleCOMSPS_CHB and for MapleCOMPSPS_LRB:
 
 Add the following lines to core/Solver.h:
-#ifdef __APPLE__
-  #define fwrite_unlocked fwrite
-  #define fflush_unlocked fflush
-#endif
+\#ifdef \_\_APPLE\_\_
+  \#define fwrite_unlocked fwrite
+  \#define fflush_unlocked fflush
+\#endif
