@@ -1,6 +1,6 @@
 # Compiling maplesat on MacOS
 
-The changes to fix issues with minisat are given in the following 3 git commit records. Each gives a few lines that need to be changed to allow compilation on Mac:
+To compile maplesat, mapleCOMSPS_LRB, and mapleCOMSPS_CHB found at https://sites.google.com/a/gsd.uwaterloo.ca/maplesat/maplesat on a machine running Mac OS a number of changes need to be made. The changes to fix issues with minisat are given in the following 3 git commit records. Each gives a few lines that need to be changed to allow compilation on Mac:
 
 https://github.com/u-u-h/minisat/commit/e768238f8ecbbeb88342ec0332682ca8413a88f9
 https://github.com/niklasso/minisat/commit/9bd874980a7e5d65cecaba4edeb7127a41050ed1.patch?full_index=1
@@ -16,3 +16,4 @@ Add the following lines to core/Solver.h:
   #define fflush_unlocked fflush
 #endif
 ````
+Note that minisat can be compiled and installed using the Homebrew package manager on Mac OS. The instructions described above are what the Homebrew formula does to install minisat.
