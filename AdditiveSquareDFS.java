@@ -1,5 +1,5 @@
 import java.util.*;
-public class Additive2 {
+public class AdditiveSquareDFS {
   static int MAX_LEN = 500;
   static int[] ALPHABET;
   static int ALPHABET_SIZE;
