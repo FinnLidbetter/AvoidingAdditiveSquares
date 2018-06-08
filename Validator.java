@@ -4,6 +4,7 @@ public class Validator {
   public static void main(String[] args) throws IOException {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     String line = br.readLine();
+    try {
     String[] s = line.substring(1,line.length()-1).split(",");
     for (int i=0; i<s.length; i++) {
       s[i] = s[i].trim();
@@ -31,5 +32,13 @@ public class Validator {
       System.out.println("Valid");
     else
       System.out.println("Invalid");
+    } catch (Exception e) {
+      printHelp();
+      return;
+    }
+  }
+  static void printHelp() {
+    System.out.println("Usage: java Validator < FILE_CONTAINING_SEQUENCE");
+    System.out.println("\tFILE_CONTAINING_SEQUENCE is a single line formatted as a comma separated\n\tlist of values with opening and closing parentheses, e.g.,\n\t\t [1,2,3,1]");
   }
 }
