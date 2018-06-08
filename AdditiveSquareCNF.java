@@ -1,6 +1,12 @@
 import java.util.*;
 
-public class BitAdderSat {
+/**
+ * WARNING this is a deprecated version of this file. It is kept here as this file is
+ * referenced in the report included in this repository. For the current version see
+ * the file: compactEncoding/BitAdderSat.java
+ */
+
+public class AdditiveSquareCNF {
   static int varCount = 0;
   static int MAX_SYMBOL_MODE = 0;
   static int VALUE_SET_MODE = 1;
