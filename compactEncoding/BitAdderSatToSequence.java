@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 
-public class SatToSequence {
+public class BitAdderSatToSequence {
   public static void main(String[] args) throws IOException {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     if (args.length!=2) {
